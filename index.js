@@ -13,7 +13,7 @@ function normalizeKeywords(keywords) {
     return keywords.map(k => k.toLowerCase());
 }
 
-export function serachProverbOR(...keywords) {
+export function searchProverbOR(...keywords) {
     keywords = normalizeKeywords(keywords);
     const matches = proverbs.filter(proverb => 
         keywords.some(keyword => proverb.includes(keyword))
